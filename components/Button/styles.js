@@ -4,7 +4,8 @@ const styles = StyleSheet.create({
     buttonContaier: {
         width: "100%",
         padding: 10,
-   
+        paddingVertical: 20,
+        paddingHorizontal: 20
     },
     button: {
         height: 40,

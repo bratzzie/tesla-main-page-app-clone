@@ -1,16 +1,17 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    contaier: {
+    buttonContaier: {
         width: "100%",
         padding: 10,
-    
+   
     },
     button: {
         height: 40,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 20,
+        padding: 10,
     },
     text : {
         fontSize :12,

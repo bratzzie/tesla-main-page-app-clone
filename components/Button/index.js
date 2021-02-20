@@ -9,7 +9,7 @@ const Button = ({type, text}) => {
     const textColor = type === 'primary' ? '#FFF' : '#171A20';
 
     return (
-        <View style={styles.container} >
+        <View style={styles.buttonContainer} >
             <Pressable
             style={[styles.button, {backgroundColor: bgColor}]}
             onPress={() => {

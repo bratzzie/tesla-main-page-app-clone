@@ -4,21 +4,30 @@ import Button from '../Button';
 
 import styles from './styles'
 
-const CarItem = () => {
+const CarItem = ({name, tagLine, image, tagLineCTA}) => {
     return (
         <View style={styles.carContainer}>
 
-        <ImageBackground source={require('../../assets/images/ModelX.jpeg')}
+        <ImageBackground source={image}
         style={styles.image}/>
 
         <View style={styles.titles}>
-          <Text style={styles.title}>Model S</Text>
-          <Text style={styles.subtitle}>Starting at $69,420</Text>
+          <Text style={styles.title}>{name}</Text>
+          <Text style={styles.subtitle}>
+            {tagLine} {" "}
+          
+          <Text style={styles.tagLineCTA}>
+            {tagLineCTA}
+          </Text>
+          </Text>
         </View>
 
-        <Button type="primary" text={"Custom Order"} />
-        <Button type="secondary" text={"Existing Inventory"} />
-      </View>
+        <View style={styles.buttonsContainer}>
+          <Button type="primary" text={"Custom Order"} />
+          <Button type="secondary" text={"Existing Inventory"} />
+        </View>
+
+        </View>
     );
 }
 

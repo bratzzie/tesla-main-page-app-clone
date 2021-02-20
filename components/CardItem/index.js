@@ -4,7 +4,8 @@ import Button from '../Button';
 
 import styles from './styles'
 
-const CarItem = ({name, tagLine, image, tagLineCTA}) => {
+const CarItem = (props) => {
+  const {name, tagLine, image, tagLineCTA} = props.car;
     return (
         <View style={styles.carContainer}>
 
